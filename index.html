@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Light Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>2D Traffic Light Simulation</h1>
+
+    <div class="traffic-light">
+
+        <div class="light red" id="red"></div>
+
+        <div class="light yellow" id="yellow"></div>
+
+        <div class="light green" id="green"></div>
+
+    </div>
+
+    <div class="pole"></div>
+    <!-- Road Animation -->
+
+<div class="road" id="road">
+
+    <!-- Road Divider -->
+    <div class="divider"></div>
+
+    <!-- Zebra Crossing -->
+    <div class="zebra-crossing">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Cars -->
+    <div class="car car1">
+        <span>🚗</span>
+    </div>
+
+    <div class="car car2">
+        <span>🚙</span>
+    </div>
+
+</div>
+
+    <h2 id="message">STOP</h2>
+
+    <h3>Time: <span id="timer">5</span> Seconds</h3>
+
+    <button onclick="startSignal()">Start</button>
+    <button onclick="stopSignal()">Stop</button>
+    <button onclick="resetSignal()">Reset</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
